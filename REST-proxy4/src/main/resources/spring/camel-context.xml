@@ -10,7 +10,11 @@
                 objectMapper="com.camel.CustomObjectMapper" unmarshalTypeName="org.mycompany.models.Responce"/>
         </dataFormats>
         <restConfiguration bindingMode="json" component="jetty"
+<<<<<<< HEAD
             host="localhost" port="8080"/>
+=======
+            host="0.0.0.0" port="8080"/>
+>>>>>>> branch 'master' of https://github.com/drshakal/REST_POC_01.git
         <rest id="rest" path="/ft">
             <post id="rest-id" outType="org.mycompany.models.Responce"
                 type="org.mycompany.models.Request" uri="/transfer">
